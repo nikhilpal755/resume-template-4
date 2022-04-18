@@ -14,7 +14,7 @@ function App() {
         name: 'John Doe',
         profession: 'Junior Developer',
         profileImageURL: 'https://i.imgur.com/f6L6Y57.png',
-        display: true,
+        display: false,
         about:
           'Recent college graduate with experience in various areas of software engineering, including infrastructure and data analytics. A fast learner who thrives on generating innovative ideas, trouble-shooting and problem-solving, and working with object-oriented programming languages including Python and Java. ',
       },
@@ -31,10 +31,10 @@ function App() {
         ],
       },
       {
-        header: 'Key Skills',
+        header: 'Technical Skills',
         type: 'KeySkills',
         display: true,
-        text: '• Knowledge of basic coding languages including C++, HTML5, and JavaScript.\n• Basic knowledge of  SQL, NoSQL databases\n• Knowledgable on Node.js, Spring, Hibernate\n• Extensive Linux/Unix experience\n• Software testing (Jest, Chai, Mocha)\n• CI/CD Basics ',
+        items: ['•  C++, HTML5, and JavaScript', '•  React, Redux, and Node.js', '•  MySQL, MongoDB, and PostgreSQL'],
       },
       {
         header: 'Employment History',
@@ -42,7 +42,8 @@ function App() {
         display: true,
         items: [
           {
-            position: 'Software Engineer - Bank of E-Corp',
+            position: 'Software Engineer',
+            company: 'Bank of E-Corp',
             date: 'Mar 2017 - Dec 2019',
             description:
               'Bank of E-Corp is a Banking Financial Institution in the US.\nAs a Software Engineer, I work on their banking platform in an Agile environment.\n My daily responsibilities include: ',
@@ -50,7 +51,8 @@ function App() {
               '• Participating in daily stand up meetings, led by our Scrum Master\n • Utilizing the MEAN stack to enhance and maintain our banking platform \n• Conducting code peer reviews with other members in my team\n• Participating in product demos\n• Documenting all code changes',
           },
           {
-            position: 'Junior Software Developer - Steel Mountain',
+            position: 'Junior Software Developer',
+            company: 'Steel Mountain',
             date: 'Mar 2015 - Dec 2016',
             description:
               'Bank of E Network is a Banking Financial Institution in the US.\nAs a Software Developer, I work on their banking platform in an Agile environment.\n My daily responsibilities include: ',
@@ -84,16 +86,16 @@ function App() {
         ],
       },
       {
-        header: 'Certifications',
+        header: 'Courses',
         type: 'Certifications',
         display: true,
         items: [
           {
-            name: 'Oracle Certified\nAssociate (OCA)',
+            name: 'Oracle Certified Associate (OCA)',
             date: 'Mar 2020',
           },
           {
-            name: 'AWS Cloud\n Practitoner',
+            name: 'AWS Cloud Practitoner',
             date: 'Jul 2020',
           },
         ],
@@ -126,21 +128,41 @@ function App() {
         ],
       },
       {
-        header: 'Contact',
+        header: 'Personal Info',
         type: 'Contact',
         display: true,
         items: [
           {
+            name: 'Phone',
             text: '+61 01 012121',
           },
           {
-            text: 'eliot@example.com',
+            name: 'Email',
+            text: 'eliot@gmail.com',
           },
           {
-            text: 'www.eliotdev.com',
+            name: 'linkedin',
+            text: 'https://linkedin.com/nikhil',
           },
         ],
-      },
+      },{
+        header: 'languages',
+        type: 'Languages',
+        display: true,
+        items: [
+          {
+            text: 'English',
+            level: 'Native',
+          },{
+            text: 'Spanish',
+            level: 'fluent'
+          },{
+            text: 'French',
+            level: 'Professional'
+          }
+        ]
+
+      }
     ],
   })
   const getComponentData = (type) => {

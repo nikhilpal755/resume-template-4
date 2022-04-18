@@ -3,16 +3,8 @@ import styles from '../../../../styles'
 import Divider from './Divider'
 
 const About = ({ text }) => (
-  <View>
-    <Text
-      style={{
-        color: '#000',
-        fontSize: '15',
-      }}
-    >
-      Professional Summary
-    </Text>
-    <Divider />
+  <View style={{marginRight: '20'}}>
+
     <Text style={styles.main__text}>{text}</Text>
   </View>
 )

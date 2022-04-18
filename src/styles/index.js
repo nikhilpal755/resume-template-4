@@ -16,28 +16,36 @@ export default StyleSheet.create({
     padding: 10,
     paddingTop: 20,
     width: '75%',
+    alignSelf: 'flex-end',
+    height: '100%'
   },
   section__left: {
     width: '25%',
-    backgroundColor: '#084c41',
+    // backgroundColor: '#084c41',
+    height: '100%',
+    alignSelf: 'flex-start',
+    backgroundColor:'whitesmoke'
   },
   name_text: {
-    paddingTop: '10px',
+    // paddingTop: '10px',
     paddingBottom: '5px',
-    fontSize: '14px',
+    fontSize: '25px',
     fontWeight: '900',
-    color: 'white',
+    // color: 'white',
+    // fontSize: '10rem'
   },
   profession_text: {
     // fontFamily: 'Roboto',
-    color: '#d1d5db',
+    // color: '#d1d5db',
     fontSize: '11px',
   },
   heading__text: {
     fontSize: '14',
   },
   main__text: {
-    fontSize: '11',
+    fontSize: '13',
+    lineHeight: '1.5',
+
   },
   left__section__heading: {
     fontSize: '12',
@@ -54,15 +62,15 @@ export default StyleSheet.create({
     width: '100%',
     height: '5px',
     marginTop: '5px',
-    backgroundColor: '#518179',
+    // backgroundColor: '#518179',
   },
   skill__item__fill: {
     width: '30%',
     height: '51px',
-    backgroundColor: '#FFF',
+    // backgroundColor: '#FFF',
   },
   skill__item__text: {
-    color: '#FFF',
+    // color: '#FFF',
     fontSize: '9',
   },
   socials__container: {

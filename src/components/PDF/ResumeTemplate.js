@@ -17,6 +17,8 @@ import { BuilderContext } from './../../App'
 import { PDFViewer, PDFDownloadLink } from '@react-pdf/renderer'
 import { Right as SectionRight } from './Sections/Right_'
 import { Left as SectionLeft } from './Sections/Left_'
+// import {Top as SectionTop} from './Sections/top/index'
+import Top from './Sections/top/index'
 
 // Font.register({
 //   family: 'Roboto',
@@ -58,8 +60,14 @@ const ResumeTemplate = ({ builder }) => (
   <Document style={styles.document}>
     <Page size='A4' style={styles.page}>
       <BuilderContext.Provider value={builder}>
-        <SectionLeft />
-        <SectionRight />
+
+        <div style={{position : 'relative', display:'flex'}}>
+          <Top/>
+          <div style={{postion : 'relative', display: 'flex', flexDirection: 'row',justifyContent: 'center' }}>
+            <SectionRight />
+            <SectionLeft />
+          </div>
+        </div>
       </BuilderContext.Provider>
     </Page>
   </Document>

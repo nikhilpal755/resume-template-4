@@ -32,6 +32,13 @@ const EmploymentItem = ({ data, index, handleChange }) => {
       {!isToggled && (
         <div>
           <TextInput
+            placeholder='Company'
+            style='pb-2'
+            name='company'
+            defaultValue={data?.company}
+            handleChange={(e) => handleChange(index, e)}
+          />
+          <TextInput
             placeholder='Date From - To'
             style='pb-2'
             name='date'
